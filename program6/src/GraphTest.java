@@ -145,7 +145,7 @@ public class GraphTest {
       assertEquals("test06: failed - vertex insertion error", true,
           graph.getAllVertices().contains("b"));
       graph.addEdge("a", "b");
-      assertEquals("test06: failed - edge insertion error", 1, graph.order());
+      assertEquals("test06: failed - edge insertion error", 2, graph.order());
       graph.addVertex("c");
       assertEquals("test06: failed - vertex insertion error", true,
           graph.getAllVertices().contains("c"));
@@ -157,5 +157,4 @@ public class GraphTest {
       fail("test05: failed - unexpected exception occurred");
     }
   }
-  // TODO: add additional JUnit tests here
 }
